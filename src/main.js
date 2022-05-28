@@ -69,8 +69,8 @@ app.post("/login", passport.authenticate("local", {
 app.use(checkAuthentication);
 
 app.get("/", (req, res) => {
-    res.redirect("https://ilovegreeny.github.io/web_create/")
-    //res.sendFile(path.resolve("public/home.html"));
+    //res.redirect("https://ilovegreeny.github.io/web_create/")
+    res.sendFile(path.resolve("public/home.html"));
 });
 
 app.get("/logout", (req, res) => {
