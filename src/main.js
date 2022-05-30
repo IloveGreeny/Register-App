@@ -69,8 +69,6 @@ app.post("/login", passport.authenticate("local", {
 app.use(checkAuthentication);
 
 app.get("/", (req, res) => {
-
-
     res.redirect("https://ilovegreeny.github.io/web_create/")
 });
 
